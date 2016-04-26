@@ -1,0 +1,19 @@
+Config	{
+
+	font="Pixel Operator:size=11"
+	,bgColor="#151b1a"
+	,fgColor="#8fa388"
+	,position=Static { xpos=5, ypos=5, width=1356, height=17 }
+	,lowerOnStart=False
+	,hideOnStart=False
+	,persistent=True
+	,sepChar="%"
+	,alignSep="}{"
+	,template="%wifi% | %battery% | %vol% | %date%}{"
+	,commands=
+		[Run Com "bash" ["/home/damien/.wireless.sh"] "wifi" 30
+		,Run BatteryP ["BAT0"] ["-t", "Battery: <left>%", "--", "-O", "charging, ", "-o", ""] 30
+		,Run Com "bash" ["/home/damien/.getvolume.sh"] "vol" 10
+		,Run Date "%a %d %b %k:%M" "date" 100
+		]
+}
