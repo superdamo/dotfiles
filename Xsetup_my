@@ -1,0 +1,23 @@
+#--- set a fullscreen image in background
+#xloadimage -onroot -quiet -fullscreen /home/damien/Pictures/desolate_forest.jpg
+export HOME=/root
+/usr/bin/feh \
+	-q \
+	--bg-scale \
+	/home/damien/.wallpapers/desolate_forest.jpg
+
+#--- log messages in background
+root-tail -f -geometry 500x150-10+10 -fn fixed /var/log/messages,purple
+
+#--- set shutdown/reboot buttons
+(
+xmessage -buttons Shutdown:20,Reboot:21 "" ;
+case $? in
+ 20)
+ exec /sbin/poweroff;;
+ 21)
+ exec /sbin/reboot;;
+ *)
+ echo "Xmessage colsed on 'date'";;
+esac
+)&
