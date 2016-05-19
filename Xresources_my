@@ -1,0 +1,88 @@
+! bind actions to particular keys sequences
+! -----------------------------------------
+
+
+xlogin*login.translations: #override \
+	Ctrl<Key>R: abort-display()\n\
+	<Key>F1: set-session-argument(failsafe) finish-field()\n\
+	<Key>Delete: delete-character()\n\
+	<Key>Left: move-backward-character()\n\
+	<Key>Right: move-forward-character()\n\
+	<Key>Home: move-to-begining()\n\
+	<Key>End: move-to-end()\n\
+	Ctrl<Key>KP_Enter: set-session-argument(failsafe) finish-field()\n\
+	<Key>KP_Enter: set-session-argument() finish-field()\n\
+	Ctrl<Key>Return: set-session-argument(failsafe) finish-field()\n\
+	<Key>Return: set-session-argument() finish-field()
+
+! position
+xlogin.geometry: 400x220+483+284
+
+! colours
+xlogin*background: #151b1a
+xlogin*foreground: #8fa388
+xlogin*greetColor: #507a91
+xlogin*promptColor: #bdbda4
+xlogin*failColor: #a86d56
+
+! prompts
+xlogin*greeting:
+xlogin*namePrompt: \040\040\040\040\040\040\040Login:
+xlogin*fail: Login incorrect
+
+#if WIDTH > 800
+xlogin*greetFont: -adobe-helvetica-bold-o-normal--24-240-75-75-p-138-iso8859-1
+xlogin*font: -adobe-helvetica-medium-r-normal--18-180-75-75-p-98-iso8859-1
+xlogin*promptFont: -adobe-helvetica-bold-r-normal--18-180-75-75-p-103-iso8859-1
+xlogin*failFont: -adobe-helvetica-bold-r-normal--18-180-75-75-p-103-iso8859-1
+xlogin*greetFace:	Serif-24:bold:italic
+xlogin*face: 		Pixel Operator-18
+xlogin*promptFace: 	Pixel Operator-18:bold
+xlogin*failFace: 	Pixel Operator-18:bold
+#else
+xlogin*greetFont: -adobe-helvetica-bold-o-normal--17-120-100-100-p-92-iso8859-1
+xlogin*font: -adobe-helvetica-medium-r-normal--12-120-75-75-p-67-iso8859-1
+xlogin*promptFont: -adobe-helvetica-bold-r-normal--12-120-75-75-p-70-iso8859-1
+xlogin*failFont: -adobe-helvetica-bold-o-normal--14-140-75-75-p-82-iso8859-1
+xlogin*greetFace:	Serif-18:bold:italic
+xlogin*face:		Pixel Operator-12
+xlogin*promptFace:	Pixel Operator-12:bold
+xlogin*failFace:	Pixel Operator-14:bold
+#endif
+
+! shape
+xlogin*borderWidth: 0
+xlogin*frameWidth: 0
+xlogin*innerFramesWidth: 0
+
+! xmessage resources
+! ==================
+Xmessage*geometry: 150x30+1216+738
+Xmessage*background: #151b1a
+Xmessage*foreground: #8fa388
+Xmessage*Font: -adobe-helvetica-bold-o-normal--24-240-75-75-p-138-iso8859-1
+Xmessage*borderWidth: 0
+
+Xmessage*message.scrollVertical: never
+Xmessage*message.scrollHorizontal: never
+
+Xmessage*Text*Background: #151b1a
+Xmessage*Text*Foreground: #8fa388
+Xmessage*Text*borderColor:
+Xmessage*Text*borderWidth: 0
+Xmessage*Text*font: -adobe-helvetica-bold-o-normal--24-240-75-75-p-138-iso8859-1
+
+!#if PLANES >= 8
+!xlogin*logoFileName: /usr/share/X11/xdm/pixmaps/debian.xpm
+!#else
+!xlogin*logoFileName: /usr/share/X11/xdm/pixmaps/debianbw.xpm
+!#endif
+!xlogin*useShape: true
+!xlogin*logoPadding: 10
+
+
+!XConsole.text.geometry:	480x130
+!XConsole.verbose:	true
+!XConsole*iconic:	true
+!XConsole*font:		fixed
+
