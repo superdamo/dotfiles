@@ -13,18 +13,18 @@ Minimal Debian with Xmonad
    ### Software Install
 5. Run `sudo apt-get install aptitude`
 6. From [Aptitude](https://wiki.debian.org/Aptitude) install the following packages **with their dependencies**
-  1. [Xmonad](http://xmonad.org/)
-  2. [xmobar](http://projects.haskell.org/xmobar/)
-  3. [Xorg](https://wiki.debian.org/Xorg)
-  4. [xterm](https://packages.debian.org/jessie/xterm)(_or whichever terminal emulator you prefer_)
-  5. [xdm](https://wiki.debian.org/XDM)
-  6. [dmenu](http://tools.suckless.org/dmenu/)
-  7. [Git](https://packages.debian.org/jessie/git)
+  * [Xmonad](http://xmonad.org/)
+  * [xmobar](http://projects.haskell.org/xmobar/)
+  * [Xorg](https://wiki.debian.org/Xorg)
+  * [xterm](https://packages.debian.org/jessie/xterm)(_or whichever terminal emulator you prefer_)
+  * [xdm](https://wiki.debian.org/XDM)
+  * [dmenu](http://tools.suckless.org/dmenu/)
+  * [Git](https://packages.debian.org/jessie/git)
 
     _Optional Software_
-  8. [ranger](http://ranger.nongnu.org/)
-  9. [atom](https://atom.io/)
-  10. [midori](http://midori-browser.org/)
+  * [ranger](http://ranger.nongnu.org/)
+  * [atom](https://atom.io/)
+  * [midori](http://midori-browser.org/)
 7. Run `git clone https://github.com/superdamo/`the repostories above and `mv` to their respective locations.
 8. Run `touch ~/.dmenu_cache` _*this file will be populated automatically_
 
