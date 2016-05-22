@@ -19,6 +19,7 @@ Minimal Debian with Xmonad
   * [xterm](https://packages.debian.org/jessie/xterm)(_or whichever terminal emulator you prefer_)
   * [xdm](https://wiki.debian.org/XDM)
   * [dmenu](http://tools.suckless.org/dmenu/)
+  * [feh](http://feh.finalrewind.org/)
   * [Git](https://packages.debian.org/jessie/git)
 
     _Optional Software_
