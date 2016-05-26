@@ -26,7 +26,7 @@ Minimal Debian with Xmonad
   * [ranger](http://ranger.nongnu.org/)
   * [atom](https://atom.io/)
   * [midori](http://midori-browser.org/)
-7. Run `git clone https://github.com/superdamo/`the repostories above and `mv` to their respective locations.
+7. Run `git clone https://github.com/superdamo/dotfiles` and `mv` items to their respective locations.
 8. Run `touch ~/.dmenu_cache` _*this file will be populated automatically_
 
 ### WIP VM Screenshots (_with dodgy resolution_)
