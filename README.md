@@ -28,6 +28,10 @@ Minimal Debian with Xmonad
   * [midori](http://midori-browser.org/)
 7. Run `git clone https://github.com/superdamo/dotfiles` and `mv` items to their respective locations.
 8. Run `touch ~/.dmenu_cache` _*this file will be populated automatically_
+9. Edit the file `/etc/X11/xdm/xdm-config` changing the following lines;
+  * DisplayManager._0.setup:        /etc/X11/xdm/Xsetup_my
+  * DisplayManager._0.startup:      /etc/X11/xdm/GiveConsole_my
+  * DisplayManager*resources:       /etc/X11/xdm/Xresources_my
 
 ### WIP VM Screenshots (_with dodgy resolution_)
 
