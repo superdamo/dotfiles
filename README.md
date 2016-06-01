@@ -32,7 +32,7 @@ Minimal Debian with Xmonad
   * DisplayManager._0.setup:......../etc/X11/xdm/Xsetup_my
   * DisplayManager._0.startup:....../etc/X11/xdm/GiveConsole_my
   * DisplayManager*resources:......./etc/X11/xdm/Xresources_my
-10. Edit the file `/etc/XII/xinit/xinitrc` commenting out or deleting the line below the comment "# invoke global X session script" and add the line `. ~/.xinitrc`
+10. Edit the file `/etc/X11/xinit/xinitrc` commenting out or deleting the line below the comment "# invoke global X session script" and add the line `. ~/.xinitrc`
 
 ### WIP VM Screenshots (_with dodgy resolution_)
 
