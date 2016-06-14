@@ -24,6 +24,5 @@ main = xmonad $ gnomeConfig
 	, terminal = "xterm"
 	, layoutHook = avoidStruts $ smartBorders $ myLayout 
 	, manageHook = manageHook defaultConfig <+> manageDocks
-		} `additionalKeys` nyKeys
-
+		} `additionalKeys` myKeys
 
