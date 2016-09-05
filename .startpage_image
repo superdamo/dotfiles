@@ -1,0 +1,18 @@
+#! /bin/bash
+
+ID="$(wget -q "http://imgur.com/r/brutalism/top/day" -O - | grep '"post"' | grep class | cut -d\" -f 2 | head -1)"
+
+if [ -d "/home/damien/.wallpapers/startpage" ]; then
+    cd /home/damien/.wallpapers/startpage/ || exit
+    mv pic_3.jpg pic_4.jpg
+    mv pic_2.jpg pic_3.jpg
+    mv pic_1.jpg pic_2.jpg
+    wget "http://i.imgur.com/$ID.jpg" -O pic_1.jpg
+else
+    mkdir /home/damien/.wallpapers/startpage
+    cd /home/damien/.wallpapers/startpage/ || exit
+    mv pic_3.jpg pic_4.jpg
+    mv pic_2.jpg pic_3.jpg
+    mv pic_1.jpg pic_2.jpg
+    wget "http://i.imgur.com/$ID.jpg" -O pic_1.jpg
+fi
