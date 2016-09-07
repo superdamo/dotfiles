@@ -5,6 +5,7 @@
     <head>
         <title>superdamo's startpage</title>
 
+<!--js clock script-->
         <script>
             function startTime() {
                 var today = new Date();
@@ -23,23 +24,31 @@
                 return i;
             }
         </script>
+	
+        <style>
+/*div's to set where the three main elements appear*/
+            div.left{
+                float:left;
+                padding:51px 0px 20px 140px;
+            }
+            div.center{
+                float:right;
+                margin-right:140px;
+				line-height:540px;
+            }
+            div.right{
+                float:right;
+                margin-right:60px;
+				height:300px;
+            }
 
-            <style>
-                div.left{
-                    float:left;
-                    padding:43px 0px 20px 140px;
-                }
-                div.center{
-                    float:right;
-                    margin-right:140px;
-                }
-                div.right{
-                    float:right;
-                    margin-right:60px;
-                }
-            </style>
+/*font*/
+            @font-face {
+                font-family: pixelOperator;
+                src: url(/usr/share/fonts/truetype/pixel_operator/PixelOperator.ttf);
+            }
 
-            <style>
+/*search box styling*/            
                 input[type=text] {
                     width: 240px;
                     box-sizing: border-box;
@@ -49,52 +58,28 @@
                     background-color: #151b1a;
                     background-position: 10px 10px;
                     background-repeat: no-repeat;
-                    padding: 12px 0px 12px 40px;
-                    -webkit-transition: width 0.4s ease-in-out;
-                    transition: width 0.4s ease-in-out;
-                }
-
-                input[type=text]:focus {
-                    width: 100%;
+                    padding: 12px 0px 12px 20px;
                 }
                 </style>
-
-                <style>
-                @font-face {
-                    font-family: pixelOperator;
-                    src: url(/usr/share/fonts/truetype/pixel_operator/PixelOperator.ttf);
-                }
-
-                div {
-                    font-family: pixelOperator;
-                }
-            </style>
-
-            <!--<script>
-                function loadUrl() {
-                    var url = document.getElementById( 'url' ).value;
-                    var showUrl = document.getElementById( 'showUrl' );
-                    showUrl.src = url;
-                }
-            </script>-->
     </head>
 
-    <body onload="startTime()" bgcolor="#151b1a" text="#8fa388"; style="font-family: pixelOperator">
+<!--body tag loads the clock, sets background and text colours-->
+    <body onload="startTime()" bgcolor="#151b1a" text="#8fa388">
+<!--clock-->
         <h1 style="text-align: center; font-size: 120px; margin-top: 30px; margin-bottom: 100px"><div id="txt"></div></h1>
 
+<!--search box-->
         <div class="left"><form method="get" action="https://www.google.ie/search">
-            <input class="search" type="text" name="q" placeholder="Search.." style="color: #8fa388; text-align: left; font-family: pixelOperator"></input>
+            <input class="search" type="text" name="q" placeholder="Search.." style="color: #8fa388; text-align: left"></input>
         </form></div>
 
+<!--photograph-->
         <div class="center"><img src="/home/damien/.wallpapers/startpage/pic_1.jpg" width=300px>
         </img> </div>
 
-        <!--<div class="left"><iframe src="<http://www." width="280" height="400" style="margin-left: 60px; margin-right: 20px"></iframe></div>
-
-        <div class="center"><iframe src="http://www.reddit.com/" width="280" height="400" style="margin-right: 20px"></iframe></div>-->
-
+<!--links list-->
         <div class="right"><ul style="font-size: 40px; text-align: right; margin-left: 20px; margin-right: 60px">
-            <a href="https://www.google.ie" style="color: #8fa388; text-decoration: none">Search</a><br>
+            <a href="https://www.google.ie" style="color: #8fa388; text-decoration: none">Google</a><br>
             <a href="https://www.gmail.com" style="color: #8fa388; text-decoration: none">Gmail</a><br>
             <a href="https://www.youtube.com" style="color: #8fa388; text-decoration: none">YouTube</a><br>
             <a href="https://www.reddit.com/me/m/damo/new/" style="color: #8fa388; text-decoration: none">Reddit</a><br>
