@@ -1,16 +1,15 @@
 import XMonad
 import XMonad.Config.Gnome
-import XMonad.Layout.Spacing
-import XMonad.Layout.NoBorders
+import XMonad.Layout.EqualSpacing
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.EZConfig(additionalKeys)
 
 
 myLayout = tiled ||| Mirror tiled ||| Full
   where
-	tiled = spacing 5 $ Tall nmaster delta ratio
+	tiled = equalSpacing 5 5 0 6 $ Tall nmaster delta ratio
 	nmaster = 1
-	ratio = 4/7
+	ratio = 5/9
 	delta = 3/100
 	
 myKeys = [((mod1Mask, xK_p)
@@ -18,11 +17,11 @@ myKeys = [((mod1Mask, xK_p)
 	]
 
 main = xmonad $ gnomeConfig
-	{ borderWidth        = 3
-	, normalBorderColor = "#6b6b6f"
+	{ borderWidth        = 6
+	, normalBorderColor = "#bdbda4"
 	, focusedBorderColor = "#507a91"
 	, terminal = "xterm"
-	, layoutHook = avoidStruts $ smartBorders $ myLayout 
+	, layoutHook = avoidStruts $ myLayout 
 	, manageHook = manageHook defaultConfig <+> manageDocks
 		} `additionalKeys` myKeys
 
