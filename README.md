@@ -30,8 +30,10 @@ Minimal Debian with Xmonad
 9. Edit the file `/etc/X11/xdm/xdm-config` changing the following lines;
   * DisplayManager._0.setup:......../etc/X11/xdm/Xsetup_my
   * DisplayManager._0.startup:....../etc/X11/xdm/GiveConsole_my
-  * DisplayManager*resources:......./etc/X11/xdm/Xresources_my
+  * DisplayManager\*resources:......./etc/X11/xdm/Xresources_my
 10. Edit the files `/etc/X11/xinit/xinitrc` & `/etc/X11/xdm/Xsession` commenting out or deleting the line below the comment "# invoke global X session script" and add the line `. ~/.xinitrc`
+11. Clone [xmonad-equalspacing](https://github.com/egasimus/xmonad-equalspacing) following the instructions there.
+12. Run `xmonad --recompile`
 
 ### WIP VM Screenshots (_with dodgy resolution_)
 
