@@ -25,7 +25,6 @@ Minimal Debian with Xmonad
     _Optional Software_
   * [ranger](http://ranger.nongnu.org/)
   * [atom](https://atom.io/)
-  * [midori](http://midori-browser.org/)
 7. Run `git clone https://github.com/superdamo/dotfiles` and `mv` items to their respective locations.
 8. Run `touch ~/.dmenu_cache` _*this file will be populated automatically_
 9. Edit the file `/etc/X11/xdm/xdm-config` changing the following lines;
