@@ -7,7 +7,7 @@ import XMonad.Util.EZConfig(additionalKeys)
 
 myLayout = tiled ||| Mirror tiled ||| Full
   where
-	tiled = equalSpacing 5 5 0 6 $ Tall nmaster delta ratio
+	tiled = equalSpacing 16 0 0 10 $ Tall nmaster delta ratio
 	nmaster = 1
 	ratio = 5/9
 	delta = 3/100
