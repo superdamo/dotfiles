@@ -14,5 +14,5 @@ ir=`expr index "$str2" [`
 muter=''
 if [ ${str2:$il:3} = $o ]; then muter='M'; fi
 v2=${str2%%]*]}
-v=${v1}\ $mutel\ ${v2}\ $muter
-echo $v
+v="l "${v1}\ $mutel\ "r "${v2}\ $muter
+echo "Vol: "$v
