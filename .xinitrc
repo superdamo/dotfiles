@@ -7,8 +7,5 @@ sh /home/damien/.fehbg &
 #set window manager
 exec xmonad &
 
-#start status bar
-exec xmobar
-
 #start a terminal
 /usr/bin/X11/xterm
