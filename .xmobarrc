@@ -12,7 +12,7 @@ Config	{
 	,persistent=True
 	,sepChar="%"
 	,alignSep="}{"
-	,template=" StdinReader } %cmus% { %wifi% | %battery% | %vol% | %date% "
+	,template="  %StdinReader% } %cmus% { %wifi% | %battery% | %vol% | %date%  "
 	,commands=
 		[Run Com "bash" ["/home/damien/.wireless.sh"] "wifi" 1
 		,Run BatteryP ["BAT0"] ["-t", "Battery: <left>%", "--", "-O", "charging, ", "-o", ""] 30
