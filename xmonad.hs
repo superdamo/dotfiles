@@ -2,7 +2,7 @@ import XMonad
 import XMonad.Layout.EqualSpacing
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
-import Xmonad.Util.Run(spawnPipe)
+import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO(hputStrLn)
 
