@@ -12,12 +12,13 @@ Config	{
 	,persistent=True
 	,sepChar="%"
 	,alignSep="}{"
-	,template="} %cmus% { %wifi% | %battery% | %vol% | %date% "
+	,template=" StdinReader } %cmus% { %wifi% | %battery% | %vol% | %date% "
 	,commands=
 		[Run Com "bash" ["/home/damien/.wireless.sh"] "wifi" 1
 		,Run BatteryP ["BAT0"] ["-t", "Battery: <left>%", "--", "-O", "charging, ", "-o", ""] 30
 		,Run Com "bash" ["/home/damien/.getvolume.sh"] "vol" 10
 		,Run Date "%a %d %b %k:%M" "date" 100
 		,Run Com "bash" ["/home/damien/.cmus_info.sh"] "cmus" 1
+		,Run StdinReader
 		]
 }
