@@ -14,8 +14,8 @@
 
 :root {
     /* TAB VARIABLES */
-    --bg-light: #4C4C4C; --bg-dark: #3c3c3c;
-    --fg-light: #7F7F7F; --fg-dark: #7f7f7f;
+    --bg-light: #151b1a; --bg-dark: #151b1a;
+    --fg-light: #8fa388; --fg-dark: #828181;
     /*--tab-triangle-correction: -1px;/**/
     --tab-height: 22px; --tab-icon-size: 16px; --tab-strip-margin: -12px; --tab-overlap: -5px;
     --tab-fonts: "Pixel Operator"; --tab-font-size: 11pt;
