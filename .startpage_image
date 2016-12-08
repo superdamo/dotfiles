@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ID="$(wget -q "http://imgur.com/r/brutalism/top/day" -O - | grep '"post"' | grep class | cut -d\" -f 2 | head -1)"
+ID="$(wget -q "http://imgur.com/r/brutalism/top/week" -O - | grep '"post"' | grep class | cut -d\" -f 2 | head -1)"
 
 if [ -d "/home/damien/.wallpapers/startpage" ]; then
     cd /home/damien/.wallpapers/startpage/ || exit
