@@ -62,7 +62,7 @@
           }
              #urlbar {
                  border: none !important; border-radius: 0 !important;
-                 margin: 0 0 0 0 !important; padding: 0 2px 0 9px !important;
+                 margin: 0 0 0 0 !important; padding: 1px 1px 1px 1px !important;
                  width: calc(100% + var(--url-right-margin)) !important;
                  height: var(--url-height) !important; min-height: var(--url-height) !important;
                  background: var(--url-background) !important; color: var(--url-color) !important;
