@@ -47,10 +47,20 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'      
 :filetype plugin on                                   
 autocmd! User GoyoEnter Limelight                     
-autocmd! User GoyoLeave Limelight!                    
-let g:limelight_conceal_ctermfg = 90.                 
+autocmd! User GoyoLeave Limelight!             
 let g:goyo_width = '70%'                              
 let g:goyo_height = '80%' 
+
+" Limelight control                                   
+let g:limelight_conceal_ctermfg = 'gray'              
+let g:limelight_conceal_ctermfg = 240                 
+let g:limelight_conceal_guifg = 'DarkGray'            
+let g:limelight_conceal_guifg = '#777777'             
+let g:limelight_default_coefficient = 0.7             
+let g:limelight_paragraph_span = 1                    
+let g:limelight_bop = '^\s'                           
+let g:limelight_eop = '\ze\n^\s'                      
+let g:limelight_priority = -1   
 
 "Keymaps
 vmap <C-c> y
