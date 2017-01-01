@@ -23,7 +23,15 @@ Plugin 'xuhdev/vim-latex-live-preview'
 
 "distraction free writing
 Plugin 'junegunn/goyo.vim'
-
+                                                      
+" In editor compilation                               
+Plugin 'thinca/vim-quickrun'                          
+                                                      
+" csv handler                                         
+Plugin 'chrisbra/csv.vim'                             
+                                                    
+" Limelighting                                        
+Plugin 'junegunn/limelight.vim'   
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,7 +43,14 @@ autocmd VimEnter * NERDTree ~/Documents/Link\ to\ Homework/Outstanding
 autocmd VimEnter * vertical resize 20
 autocmd VimEnter * wincmd p
 autocmd Filetype tex setl updatetime=1
-
+let g:airline#extensions#tabline#enabled = 1          
+let g:airline#extensions#tabline#fnamemod = ':t'      
+:filetype plugin on                                   
+autocmd! User GoyoEnter Limelight                     
+autocmd! User GoyoLeave Limelight!                    
+let g:limelight_conceal_ctermfg = 90.                 
+let g:goyo_width = '70%'                              
+let g:goyo_height = '80%' 
 
 "Keymaps
 vmap <C-c> y
@@ -45,3 +60,4 @@ map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 map <C-p> :LLPStartPreview<CR>
 map <C-g> :Goyo<CR>
 map <C-h> :Goyo!<CR>
+map <C-a> :QuickRun <CR>
