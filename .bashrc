@@ -87,3 +87,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# enable full colour support in Xterm
+if [ "$TERM" == "xterm" ]; then
+    # No it isn't, it's gnome-terminal
+    export TERM=xterm-256color
+fi
