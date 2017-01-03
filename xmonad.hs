@@ -25,6 +25,7 @@ myConfig = defaultConfig
 	, terminal = "xterm"
 	, layoutHook = avoidStruts $ myLayout 
 	, manageHook = manageHook defaultConfig <+> manageDocks
+	, startupHook = startup
 	} `additionalKeys` myKeys
 
 
@@ -34,6 +35,9 @@ myLayout = tiled ||| Mirror tiled ||| Full
 	nmaster = 1
 	ratio = 5/9
 	delta = 3/100
+	
+startup = do
+	spawn "xterm"
 	
 myKeys = [((mod1Mask, xK_p)
 	, spawn "dmenu_run -fn 'Pixel Operator 11' -l '3' -nb '#151b1a' -nf '#8fa388' -sb '#474159' -sf '#8fa388' -b")
