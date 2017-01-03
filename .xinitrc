@@ -9,3 +9,6 @@ exec xmonad &
 
 #start a terminal
 /usr/bin/X11/xterm
+
+#start wired network connection
+sh /home/damien/.network_startip.sh
