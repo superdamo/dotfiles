@@ -21,10 +21,6 @@ Minimal Debian with Xmonad
   * [dmenu](http://tools.suckless.org/dmenu/)
   * [feh](http://feh.finalrewind.org/)
   * [Git](https://packages.debian.org/jessie/git)
-
-    _Optional Software_
-  * [ranger](http://ranger.nongnu.org/)
-  * [atom](https://atom.io/)
 7. Run `git clone https://github.com/superdamo/dotfiles` and `mv` items to their respective locations.
 8. Run `touch ~/.dmenu_cache` _*this file will be populated automatically_
 9. Edit the file `/etc/X11/xdm/xdm-config` changing the following lines;
@@ -35,14 +31,16 @@ Minimal Debian with Xmonad
 11. Clone [xmonad-equalspacing](https://github.com/egasimus/xmonad-equalspacing) following the instructions there.
 12. Run `xmonad --recompile`
 
-### WIP VM Screenshots (_with dodgy resolution_)
+### WIP Screenshots
 
-#### Login Screen
-![Alt text](https://tknk.io/Cnfb)
+#### [neofetch](https://github.com/dylanaraps/neofetch), [feh](https://feh.finalrewind.org/)
+![Alt text](https://tknk.io/XPGd)
+
+#### [firefox](https://www.mozilla.org/en-US/firefox/new/)
+![Alt text](https://tknk.io/CfHZ)
+
+#### [vim](http://www.vim.org/), [ranger](http://ranger.nongnu.org/), [cmus](https://cmus.github.io/)
+![Alt text](https://tknk.io/3Q9U)
 
 #### Clean
-![Alt text](https://tknk.io/qAqj)
-
-#### Dirty (atom, aptitude, [neofetch](https://github.com/dylanaraps/neofetch))
-![Alt text](https://tknk.io/zF6X)
-_*note: the  atom colour scheme is still on the very long to do list_
+![Alt text](https://tknk.io/ASVo)
