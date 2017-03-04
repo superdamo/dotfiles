@@ -13,13 +13,13 @@ main = do
 			{ ppOutput = hPutStrLn xmproc
 			, ppTitle = (\str -> "")
 			, ppLayout = (\str -> "")
-			,ppCurrent = xmobarColor "#507a91" ""
+			, ppCurrent = xmobarColor "#507a91" ""
 			, ppVisible = xmobarColor "8fa388" ""
 			}
 		}
 	
 myConfig = defaultConfig	
-	{ borderWidth        = 6
+	{ borderWidth = 6
 	, normalBorderColor = "#bdbda4"
 	, focusedBorderColor = "#507a91"
 	, terminal = "xterm"
