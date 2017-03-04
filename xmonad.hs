@@ -4,7 +4,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
-import System.IO(hputStrLn)
+import System.IO(hPutStrLn)
 
 main = do
 	xmproc <- spawnPipe "xmobar ~/.xmobarrc"
