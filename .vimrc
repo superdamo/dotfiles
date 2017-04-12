@@ -15,6 +15,9 @@ Plugin 'syntastic'
 " Directory tree
 Plugin 'scrooloose/nerdtree'
 
+" Buffer tab & status line
+Plugin 'bling/vim-airline'
+
 " Tex preview
 Plugin 'xuhdev/vim-latex-live-preview'
 
@@ -40,17 +43,26 @@ autocmd VimEnter * NERDTree ~/Documents/Link\ to\ Homework/Outstanding
 autocmd VimEnter * vertical resize 20
 autocmd VimEnter * wincmd p
 autocmd Filetype tex setl updatetime=1
-:filetype plugin on
+autocmd FileType tex call pencil#init({'wrap': 'soft'})
 let g:goyo_width = '70%'
 let g:goyo_height = '80%'
-autocmd FileType tex call pencil#init({'wrap': 'soft'})
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline_section_c = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+let g:airline#extensions#tabline#fnamemod = ':t'
+set noshowmode
+set number
+:filetype plugin on
+:highlight LineNr ctermfg = lightgrey
 
 "Keymaps
-vmap <C-c> y
-vmap <C-x> x
-imap <C-v> <esc> P
 map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 map <C-p> :LLPStartPreview<CR>
 map <C-g> :Goyo<CR>
 map <C-h> :Goyo!<CR>
 map <C-a> :QuickRun <CR>
+map <C-t> :bn<CR>
+map <F5> :setlocal spell! spelllang=en_gb<CR>
