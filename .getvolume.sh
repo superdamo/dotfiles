@@ -1,18 +1,14 @@
 #!/bin/bash
-str=`amixer sget Master,0`
-str1=${str#Simple*\[}
-v1=${str1%%]*]}
-il=`expr index "$str1" [`
-o="off"
-mutel=''
-if [ ${str1:$il:3} == $o ]; then mutel='M'; fi
-s=${str1:0:1}
-str2=${str1#${str1:0:1}*\[}
-str1=$str2
-str2=${str1#${str1:0:1}*\[}
-ir=`expr index "$str2" [`
-muter=''
-if [ ${str2:$il:3} = $o ]; then muter='M'; fi
-v2=${str2%%]*]}
-v="l "${v1}\ $mutel\ "r "${v2}\ $muter
-echo "Vol: "$v
+
+state=$(amixer -D pulse get Master | grep Left: | grep -o on)
+sta=($state)
+
+volume=$(amixer -D pulse get Masster | grep -o -E [[:digit:]]+%)
+vol=($volume)
+
+if [[ ${sta[1])} == "on" ]]
+then
+    echo "Volume: "${vol[1]}
+else
+    echo "Volume: Mute"
+fi
