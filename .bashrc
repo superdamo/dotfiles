@@ -37,9 +37,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	PS1='\[\e[32m\]\u\[\e[m\]:\[\e[41m\]\W\[\e[m\] >'
+	PS1='\[\e[32m\]\u\[\e[m\]:\[\e[33m\]\W\[\e[m\] >'
+	PS2=' >'
 else
-	PS1='\[\e[32m\]\u\[\e[m\]:\[\e[41m\]\W\[\e[m\] >'
+	PS1='\[\e[32m\]\u\[\e[m\]:\[\e[33m\]\W\[\e[m\] >'
 fi
 unset color_prompt force_color_prompt
 
