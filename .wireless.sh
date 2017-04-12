@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ip wlan0 2>&1 | grep -q no\ wireless\ extensions\. && {
   echo wired
