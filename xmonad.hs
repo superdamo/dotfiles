@@ -13,15 +13,15 @@ main = do
 			{ ppOutput = hPutStrLn xmproc
 			, ppTitle = (\str -> "")
 			, ppLayout = (\str -> "")
-			, ppCurrent = xmobarColor "#828181" ""
-			, ppVisible = xmobarColor "8fa388" ""
+			, ppCurrent = xmobarColor "#5a5a5a" ""
+			, ppVisible = xmobarColor "bfb4a7" ""
 			}
 		}
 	
 myConfig = defaultConfig	
 	{ borderWidth = 4
-	, normalBorderColor = "#536556"
-	, focusedBorderColor = "#828181"
+	, normalBorderColor = "#364544"
+	, focusedBorderColor = "#5a5a5a"
 	, terminal = "xterm"
 	, layoutHook = avoidStruts $ myLayout 
 	, manageHook = manageHook defaultConfig <+> manageDocks
