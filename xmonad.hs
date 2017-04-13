@@ -40,7 +40,7 @@ startup = do
 	spawn "xterm"
 	
 myKeys = [((mod1Mask, xK_p)
-	, spawn "dmenu_run -fn 'Pixel Operator 11' -l '3' -nb '#151b1a' -nf '#8fa388' -sb '#474159' -sf '#8fa388' -b")
+	, spawn "dmenu_run -fn 'Pixel Operator 11' -l '3' -nb '#1a1a12' -nf '#bfb4a7' -sb '#2d2c21' -sf '#bfb4a7' -b")
 	,((0, 0x1008ff11), spawn "amixer -D pulse sset Master 2%-")
 	,((0, 0x1008ff13), spawn "amixer -D pulse sset Master 2%+")
 	,((0, 0x1008ff12), spawn "amixer -D pulse sset Master toggle")
