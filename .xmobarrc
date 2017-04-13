@@ -1,10 +1,10 @@
 Config	{
 
 	font="xft:Pixel Operator:size=11"
-	,bgColor="#151b1a"
-	,fgColor="#8fa388"
+	,bgColor="#1a1a12"
+	,fgColor="#bfb4a7"
 	,border=FullB
-	,borderColor="#536556"
+	,borderColor="#364544"
 	,borderWidth=4
 	,position=Static { xpos=16, ypos=16, width=1334, height=29 }
 	,lowerOnStart=False
