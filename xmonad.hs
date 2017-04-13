@@ -13,15 +13,15 @@ main = do
 			{ ppOutput = hPutStrLn xmproc
 			, ppTitle = (\str -> "")
 			, ppLayout = (\str -> "")
-			, ppCurrent = xmobarColor "#507a91" ""
+			, ppCurrent = xmobarColor "#828181" ""
 			, ppVisible = xmobarColor "8fa388" ""
 			}
 		}
 	
 myConfig = defaultConfig	
-	{ borderWidth = 6
-	, normalBorderColor = "#bdbda4"
-	, focusedBorderColor = "#507a91"
+	{ borderWidth = 4
+	, normalBorderColor = "#536556"
+	, focusedBorderColor = "#828181"
 	, terminal = "xterm"
 	, layoutHook = avoidStruts $ myLayout 
 	, manageHook = manageHook defaultConfig <+> manageDocks
@@ -41,4 +41,9 @@ startup = do
 	
 myKeys = [((mod1Mask, xK_p)
 	, spawn "dmenu_run -fn 'Pixel Operator 11' -l '3' -nb '#151b1a' -nf '#8fa388' -sb '#474159' -sf '#8fa388' -b")
+	,((0, 0x1008ff11), spawn "amixer -D pulse sset Master 2%-")
+	,((0, 0x1008ff13), spawn "amixer -D pulse sset Master 2%+")
+	,((0, 0x1008ff12), spawn "amixer -D pulse sset Master toggle")
+	,((0, 0x1008ff03), spawn "xbacklight -dec 5")
+	,((0, 0x1008ff02), spawn "xbacklight -inc 5")
 	]
