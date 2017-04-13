@@ -1,0 +1,45 @@
+*foreground:	#bfb4a7
+*background:	#1a1a12
+
+!black & dark grey
+*color0:	#100f0c
+*color8:	#2d2c21
+!dark red & red
+*color1:	#4d3a4e
+*color9:	#573e4c
+!dark green & green
+*color2:	#36453c
+*color10:	#445940
+!dark yellow & yellow
+*color3:	#5a5841
+*color11:	#6a6744
+!dark blue & blue
+*color4:	#363745
+*color12:	#3a3c4e
+!dark magenta & magenta
+*color5:	#4f3b50
+*color13:	#543d56
+!dark cyan & cyan
+*color6:	#364544
+*color14:	#394b49
+!light grey & white
+*color7:	#5a5a5a
+*color15:	#747474
+
+*corsorColor:	#9e6438
+
+
+!cursor theme
+
+Xcursor.theme: /usr/share/icons/DMZ-Black/cursor.theme
+
+
+!fix the XTerm alt key
+
+XTerm*metaSendsEscape: true
+
+
+!setting the font
+
+XTerm*faceName: Pixel Operator
+XTerm*faceSize: 11
