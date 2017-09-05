@@ -3,33 +3,20 @@ Install instructions
 Minimal Debian with Xmonad
 --------------------------------------------
 
-### Operating System Install
+### Follow this simple recipe for delicious fluffy rice every time.
 
-1. Run the [Debian](https://www.debian.org/) installer.
-2. Do not add a root password when prompted(_blank will install sudo_)
-3. At the software select screen **uncheck all of the boxes**.
-4. Finish the installation to preference
+1. Download and run the [Debian](https://www.debian.org/) installer.
+2. At the graphical boot menu (shown below) press **esc** to enter the boot command prompt.
 
-   ### Software Install
-5. Run `sudo apt-get install aptitude`
-6. From [Aptitude](https://wiki.debian.org/Aptitude) install the following packages **with their dependencies**
-  * [Xmonad](http://xmonad.org/)
-  * [xmobar](http://projects.haskell.org/xmobar/)
-  * [Xorg](https://wiki.debian.org/Xorg)
-  * [xterm](https://packages.debian.org/jessie/xterm)(_or whichever terminal emulator you prefer_)
-  * [xdm](https://wiki.debian.org/XDM)
-  * [dmenu](http://tools.suckless.org/dmenu/)
-  * [feh](http://feh.finalrewind.org/)
-  * [Git](https://packages.debian.org/jessie/git)
-7. Run `git clone https://github.com/superdamo/dotfiles` and `mv` items to their respective locations.
-8. Run `touch ~/.dmenu_cache` _*this file will be populated automatically_
-9. Edit the file `/etc/X11/xdm/xdm-config` changing the following lines;
-  * DisplayManager._0.setup:......../etc/X11/xdm/Xsetup_my
-  * DisplayManager._0.startup:....../etc/X11/xdm/GiveConsole_my
-  * DisplayManager\*resources:......./etc/X11/xdm/Xresources_my
-10. Edit the files `/etc/X11/xinit/xinitrc` & `/etc/X11/xdm/Xsession` commenting out or deleting the line below the comment "# invoke global X session script" and add the line `. ~/.xinitrc`
-11. Clone [xmonad-equalspacing](https://github.com/egasimus/xmonad-equalspacing) following the instructions there.
-12. Run `xmonad --recompile`
+![Alt text](https://www.tecmint.com/wp-content/uploads/2015/04/Jessie-fresh-install.png)
+
+3. Run `auto url=https://raw.githubusercontent.com/superdamo/Install/master/preseed.cfg`*
+4. Allow the installation to finish.
+5. Run `wget https://raw.githubusercontent.com/superdamo/Install/master/install.sh ~/install.sh`
+6. Run `bash ~/install.sh`
+7. Add light soy sauce to taste.
+<br><br><br><br>
+<sub>*note: This will install the system with username "damien".</sub>
 
 ### WIP Screenshots
 
