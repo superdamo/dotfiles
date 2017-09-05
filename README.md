@@ -14,7 +14,7 @@ Minimal Debian with Xmonad
 4. Allow the installation to finish inputting a user password as required.
 5. Login once the installer has finished and the system has rebooted.
 6. Run `wget https://raw.githubusercontent.com/superdamo/Install/master/install.sh ~/install.sh`
-7. Run `bash ~/install.sh`
+7. Run `bash install.sh`
 8. Some input such as password entry may be required to complete the setup.
 9. Add soy sauce to taste.
 <br><br><br><br>
