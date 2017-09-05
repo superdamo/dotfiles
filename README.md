@@ -11,10 +11,11 @@ Minimal Debian with Xmonad
 ![Alt text](https://www.tecmint.com/wp-content/uploads/2015/04/Jessie-fresh-install.png)
 
 3. Run `auto url=https://raw.githubusercontent.com/superdamo/Install/master/preseed.cfg`*
-4. Allow the installation to finish.
+4. Allow the installation to finish inputting a user password as required.
 5. Run `wget https://raw.githubusercontent.com/superdamo/Install/master/install.sh ~/install.sh`
 6. Run `bash ~/install.sh`
-7. Add light soy sauce to taste.
+7. Some input such as password entry may be required to complete the setup.
+8. Add soy sauce to taste.
 <br><br><br><br>
 <sub>*note: This will install the system with username "damien".</sub>
 
