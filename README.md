@@ -6,9 +6,9 @@ Minimal Debian with Xmonad
 ### Follow this simple recipe for delicious fluffy rice every time.
 
 1. Download and run the [Debian](https://www.debian.org/) installer.
-2. At the graphical boot menu (shown below) press **esc** to enter the boot command prompt.
+2. At the graphical boot menu press **esc** to enter the boot command prompt. (shown below)
 
-![Alt text](https://im3.ezgif.com/tmp/ezgif-3-5da1e9855e.gif)
+![Alt text](https://thumbs.gfycat.com/YellowGiantHarpseal-size_restricted.gif)
 
 3. Run `auto url=https://raw.githubusercontent.com/superdamo/Install/master/preseed.cfg`*
 4. Allow the installation to finish inputting a user password as required.
