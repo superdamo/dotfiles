@@ -8,7 +8,7 @@ Minimal Debian with Xmonad
 1. Download and run the [Debian](https://www.debian.org/) installer.
 2. At the graphical boot menu (shown below) press **esc** to enter the boot command prompt.
 
-![Alt text](https://www.tecmint.com/wp-content/uploads/2015/04/Jessie-fresh-install.png)
+![Alt text](https://im3.ezgif.com/tmp/ezgif-3-5da1e9855e.gif)
 
 3. Run `auto url=https://raw.githubusercontent.com/superdamo/Install/master/preseed.cfg`*
 4. Allow the installation to finish inputting a user password as required.
