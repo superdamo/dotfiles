@@ -1,0 +1,29 @@
+Config
+    { font = "xft:IBM 3270 Narrow:size=10"
+    , additionalFonts = [ "xft:FontAwesome:size=8" ]
+    , bgColor = "#1a1a12"
+    , fgColor = "#bfb4a7"
+    , border = NoBorder --FullB
+    --, borderColor = "#364544"
+    --, borderWidth = 4
+    , iconRoot = "/home/damien/.xmonad/icons"
+    , position = Static { xpos=24, ypos=24, width=1318, height=29 }
+    , lowerOnStart = True
+    , hideOnStart = False
+    --, allDesktops = True
+    , pickBroadest = True
+    , persistent = True
+    , sepChar = "%"
+    , alignSep = "}{"
+    , template = "  %cmus% } %UnsafeStdinReader% { <fn=1></fn> %wlan0wi% |<fn=1> </fn> %battery% | <fn=1></fn>%bright% |<fn=1> </fn>%volume% | <action=`gsimplecal` button=1><fn=1></fn> %date%</action> | <action=`poweroff` button=3><action=`systemctl suspend` button=1><fn=1></fn></action></action>  "
+    ,commands=
+        [ Run Wireless "wlan0" ["-t", "<essid>: <quality>%"] 10
+        , Run BatteryP ["BAT0"] ["-t", "<acstatus>", "--", "-o", "Battery: <left>%", "-O", "Charging: <left>%"] 30
+        , Run Com "bash" ["/home/damien/.bin/brightness"] "bright" 1
+        , Run Com "bash" ["/home/damien/.bin/getvolume.sh"] "volume" 1
+        , Run Date "%H:%M" "date" 100 --"%a %d %b %H:%M" "date" 100
+        , Run Com "bash" ["/home/damien/.bin/cmus_info.sh"] "cmus" 1
+        , Run UnsafeStdinReader
+        ]
+-- <action=`cmus-remote -r` button=1><fn=1></fn></action> <action=`cmus-remote -p` button=1><fn=1></fn></action> <action=`cmus-remote -u` button=1><fn=1></fn></action> <action=`cmus-remote -n` button=1><fn=1></fn></action>
+}
