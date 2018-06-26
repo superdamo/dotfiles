@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>start</title>
+	<link rel="icon" href="/home/damien/.wallpapers/startpage/pic_1.jpg">
+
+<!--jquery source-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+
+<!--hide search box-->
+	<script>
+		$(document).ready(function hider(){
+			$("#searchBox").focusout(function(){
+				$("#leftBox").hide();
+			});
+		});
+	</script>
+
+<!--show box and begin search on typing-->
+		<script>
+			$(document).ready(function(){
+				$(document).on("keydown", function(e){
+					$("#searchBox").focus();
+					$("#leftBox").show();
+				});
+			});
+		</script>
+
+<!--js clock script-->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                h = checkTime(h);
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};
+                return i;
+            }
+        </script>
+
+<!--onload script-->
+	<script>
+		winddow.onload = function(){
+			$(document).focus();
+		};
+	</script>
+
+	<style>
+/*div's to set where the three main elements appear*/
+            div.left{
+                float:left;
+                padding:51px 0px 20px 140px;
+            }
+            div.center{
+                float:right;
+                margin-right:140px;
+		line-height:540px;
+            }
+            div.right{
+                float:right;
+                margin-right:60px;
+		height:300px;
+            }
+
+/*font*/
+/*            @font-face {
+                font-family: "3270Narrow";
+/*                src: url("/usr/share/fonts/opentype/3270Narrow.otf")format("opentype");*/
+/*		src: url("https://github.com/powerline/fonts/blob/master/3270/3270Narrow.ttf?raw=true");
+            }
+            body{
+                font-family: "3270Narrow";
+            }*/
+
+/*search box styling*/            
+                input[type=text] {
+                    width: 240px;
+                    box-sizing: border-box;
+                    border: 2px solid #bfb4a7;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    background-color: #1a1a12;
+                    background-position: 10px 10px;
+                    background-repeat: no-repeat;
+                    padding: 12px 0px 12px 20px;
+                }
+            </style>
+
+    </head>
+
+<!--body tag loads the clock, sets background and text colours-->
+    <body onload="startTime()" bgcolor="#1a1a12" text="#bfb4a7" max-height=697px>
+<!--clock-->
+        <h1 style="text-align: center; font-size: 120px; margin-top: 30px; margin-bottom: 100px"><div id="txt"></div></h1>
+
+<!--search box-->
+        <div class="left" id="leftBox"><form method="get" action="https://www.google.ie/search">
+			<input class="search" type="text" id="searchBox" name="q" placeholder="Search.." style="color: #bfb4a7; text-align: left" ></input>
+        </form></div>
+
+<!--photograph-->
+        <div class="center"><img src="/home/damien/.wallpapers/startpage/pic_1.jpg" width=300px>
+        </img> </div>
+
+<!--links list-->
+        <div class="right"><ul style="font-size: 40px; text-align: right; margin-left: 20px; margin-right: 60px">
+            <a href="https://www.google.ie" style="color: #bfb4a7; text-decoration: none">Google</a><br>
+            <a href="https://www.gmail.com" style="color: #bfb4a7; text-decoration: none">Gmail</a><br>
+            <a href="https://www.youtube.com" style="color: #bfb4a7; text-decoration: none">YouTube</a><br>
+            <a href="https://www.reddit.com/me/m/essentials/new/" style="color: #bfb4a7; text-decoration: none">Reddit</a><br>
+            <a href="https://www.netflix.com" style="color: #bfb4a7; text-decoration: none">Netflix</a><br>
+            <a href="https://github.com/superdamo" style="color: #bfb4a7; text-decoration: none">GitHub</a><br>
+            <a href="http://www.ucd.ie/library/" style="color: #bfb4a7; text-decoration: none">Library</a><br>
+        </ul></div>
+    </body>
+</html>
