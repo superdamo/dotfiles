@@ -1,0 +1,79 @@
+!De Silva terminal colour scheme
+
+!*foreground:	#bfb4a7
+!*background:	#1a1a12
+
+!black & dark grey
+!*color0:	#100f0c
+!*color8:	#2d2c21
+!dark red & red
+!*color1:	#4d3a4e
+!*color9:	#573e4c
+!dark green & green
+!*color2:	#36453c
+!*color10:	#445940
+!dark yellow & yellow
+!*color3:	#5a5841
+!*color11:	#6a6744
+!dark blue & blue
+!*color4:	#363745
+!*color12:	#3a3c4e
+!dark magenta & magenta
+!*color5:	#4f3b50
+!*color13:	#543d56
+!dark cyan & cyan
+!*color6:	#364544
+!*color14:	#394b49
+!light grey & white
+!*color7:	#5a5a5a
+!*color15:	#747474
+
+*foreground:	#c2b2a4
+*background:	#191b11
+
+!black & dark grey
+*color0:	#060407
+*color8:	#242b19
+!dark red & red
+*color1:	#80522e
+*color9:	#9c6438
+!dark green & green
+*color2:	#556050
+*color10:	#879a7b
+!dark yellow & yellow
+*color3:	#776d57
+*color11:	#8b6e42
+!dark blue & blue
+*color4:	#4a514f
+*color12:	#858392
+!dark magenta & magenta
+*color5:	#b2a4a0
+*color13:	#d9c8c3
+!dark cyan & cyan
+*color6:	#1f2422
+*color14:	#4e5a56
+!light grey & white
+*color7:	#b7b4b8
+*color15:	#c1bdbf
+
+*corsorColor:	#9e6438
+
+
+!cursor theme
+![deprecated] set by xinitrc now
+!Xcursor.theme: /usr/share/icons/DMZ-Black/cursor.theme
+
+
+!fix the XTerm alt key
+
+XTerm*metaSendsEscape: true
+
+
+!setting the font
+
+XTerm*faceName: IBM 3270 Narrow
+XTerm*faceSize: 10
+
+!terminal padding
+
+XTerm*internalBorder: 30
