@@ -1,7 +1,0 @@
-#remove root-tail
-killall root-tail
-
-#remove xmessage buttons
-killall xmessage
-
-chown $USER /dev/console
