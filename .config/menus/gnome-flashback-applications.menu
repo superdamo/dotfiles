@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Applications</Name>
+	<MergeFile type="parent">/etc/xdg/menus/gnome-flashback-applications.menu</MergeFile>
+	<DefaultLayout inline="false"/>
+	<Menu>
+		<Name>alacarte-made</Name>
+		<Directory>alacarte-made.directory</Directory>
+		<Deleted/>
+	</Menu>
+	<Layout>
+		<Merge type="menus"/>
+		<Menuname>Accessories</Menuname>
+		<Menuname>Debian</Menuname>
+		<Menuname>Education</Menuname>
+		<Menuname>Games</Menuname>
+		<Menuname>Graphics</Menuname>
+		<Menuname>Internet</Menuname>
+		<Menuname>Office</Menuname>
+		<Menuname>Other</Menuname>
+		<Menuname>Development</Menuname>
+		<Menuname>Science</Menuname>
+		<Menuname>Multimedia</Menuname>
+		<Menuname>System</Menuname>
+		<Menuname>Universal Access</Menuname>
+		<Menuname>Web Applications</Menuname>
+		<Menuname>wine-wine</Menuname>
+		<Separator/>
+		<Filename>ubuntu-software-center.desktop</Filename>
+		<Merge type="files"/>
+	</Layout>
+	<Menu>
+		<Name>Accessories</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Education</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Games</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Graphics</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Internet</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Office</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Other</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Development</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Science</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Multimedia</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>System</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>Universal Access</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<Menu>
+		<Name>wine-wine</Name>
+		<DirectoryDir>/home/damien/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<AppDir>/home/damien/.local/share/applications</AppDir>
+	<Include>
+		<Filename>ubuntu-software-center.desktop</Filename>
+	</Include>
+</Menu>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Indicator Network
+Exec=/usr/lib/x86_64-linux-gnu/indicator-network/indicator-network-service
+StartupNotify=false
+Terminal=false
+OnlyShowIn=Unity;GNOME;
+AutostartCondition=GNOME3 unless-session gnome
+X-GNOME-Autostart-enabled=false

@@ -1,0 +1,42 @@
+02:49:15: OBS 0.10.1 (linux)
+02:49:15: Processor: 4 logical cores
+02:49:15: Processor: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz
+02:49:15: Physical Memory: 3882MB Total
+02:49:15: Kernel Version: Linux 3.19.0-18-generic
+02:49:15: Distribution: "Ubuntu" "15.04"
+02:49:15: audio settings reset:
+	samples per sec: 44100
+	speakers:        2
+	buffering (ms):  1000
+
+02:49:15: X and Y: 902 489
+Backbuffers: 2
+Color Format: 3
+ZStencil Format: 0
+Adapter: 0
+
+02:49:15: OpenGL version: 3.3 (Core Profile) Mesa 10.5.2
+
+02:49:15: video settings reset:
+	base resolution:   1366x768
+	output resolution: 908x512
+	fps:               30/1
+	format:            NV12
+02:49:16: No blackmagic support
+02:49:16: Failed to start search for DeckLink devices
+02:49:16: output 'simple_stream' (rtmp_output) created
+02:49:16: output 'simple_file_output' (flv_output) created
+02:49:16: encoder 'simple_h264' (obs_x264) created
+02:49:16: encoder 'simple_aac' (libfdk_aac) created
+02:49:16: service 'default_service' (rtmp_common) created
+02:49:16: source 'Scene' (scene) created
+02:49:17: Update check: latest version is: 0.4.0
+02:49:24: service 'default_service' destroyed
+02:49:24: encoder 'simple_h264' destroyed
+02:49:24: encoder 'simple_aac' destroyed
+02:49:24: output 'simple_stream' destroyed
+02:49:24: output 'simple_file_output' destroyed
+02:49:24: Freeing OBS context data
+02:49:24: 	1 user source(s) were remaining
+02:49:24: source 'Scene' destroyed
+02:49:24: Number of memory leaks: 0

@@ -1,0 +1,26 @@
+3e org.openoffice.da.writer2latex.oxt%3AOptionsIgnoreDoubleSpaces 47 Check this if you don't want to export two consecutive space characters
+40 org.openoffice.da.writer2latex.oxt%3AOptionsIgnoreHardLineBreaks 39 Check this if you don't want to export manual line breaks
+40 org.openoffice.da.writer2latex.oxt%3AOptionsIgnoreHardPageBreaks 39 Check this if you don't want to export manual page breaks
+3a org.openoffice.da.writer2latex.oxt%3AOptionsWrapLinesAfter 46 Enter the number of characters after which the lines should be wrapped
+33 org.openoffice.da.writer2latex.oxt%3AOptionsBackend 30 Select the final format of the exported document
+41 org.openoffice.da.writer2latex.oxt%3AOptionsSplitToplevelSections 66 Check this to create a separate LaTeX file for all sections that are not nested inside another section
+38 org.openoffice.da.writer2latex.oxt%3AOptionsFloatFigures 33 Check this to allow figures to flow in the document
+37 org.openoffice.da.writer2latex.oxt%3AOptionsBibtexStyle 3b Enter the name of a BibTeX style to format the bibliography
+35 org.openoffice.da.writer2latex.oxt%3AOptionsGreekMath 40 Check this treat greek characters as symbols rather than as text
+3d org.openoffice.da.writer2latex.oxt%3AOptionsAdditionalSymbols 50 Check this to add support for additonal symbols (e.g. phonetic symbols, smileys)
+39 org.openoffice.da.writer2latex.oxt%3AOptionsInputencoding 2f Select the character encoding of the LaTeX file
+34 org.openoffice.da.writer2latex.oxt%3AOptionsMetadata 47 Check this if you want to export meta data associated with the document
+38 org.openoffice.da.writer2latex.oxt%3AOptionsMultilingual 43 Check this if your document contains text in more than one language
+3f org.openoffice.da.writer2latex.oxt%3AOptionsSplitLinkedSections 42 Check this to create a separate LaTeX file for each linked section
+41 org.openoffice.da.writer2latex.oxt%3AOptionsIgnoreEmptyParagraphs 37 Check this if you don't want to export empty paragraphs
+32 org.openoffice.da.writer2latex.oxt%3AOptionsConfig 30 Select the general format for the LaTeX document
+31 org.openoffice.da.writer2latex.oxt%3AOptionsNotes 2a Select how to export notes in the document
+35 org.openoffice.da.writer2latex.oxt%3AOptionsUseBibtex 36 Check this to export the bibliography to BibTeX format
+3e org.openoffice.da.writer2latex.oxt%3AOptionsSaveImagesInSubdir 38 Check this to save the images in a separate subdirectory
+36 org.openoffice.da.writer2latex.oxt%3ADisplayHiddenText 4e Check this if you want to export text that is currently hidden in the document
+3d org.openoffice.da.writer2latex.oxt%3AOptionsOriginalImageSize 66 Select this option to use the original image size (the size specified in the document will be ignored)
+35 org.openoffice.da.writer2latex.oxt%3AOptionsWrapLines 3b Check this if you want to wrap long lines in the LaTeX file
+40 org.openoffice.da.writer2latex.oxt%3AOptionsOptimizeSimpleTables 2a Check this to optimize the width of tables
+37 org.openoffice.da.writer2latex.oxt%3AOptionsFloatTables 32 Check this to allow tables to flow in the document
+3c org.openoffice.da.writer2latex.oxt%3AOptionsSimpleTableLimit 56 Enter the maximum width in characters of tables that should have optimized their width
+38 org.openoffice.da.writer2latex.oxt%3AOptionsFloatOptions 2f Select placement of floating tables and figures

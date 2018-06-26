@@ -1,0 +1,24 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>wine-wine</Name>
+    <Directory>wine-wine.directory</Directory>
+  <Menu>
+    <Name>wine-Programs</Name>
+    <Directory>wine-Programs.directory</Directory>
+  <Menu>
+    <Name>wine-Programs-Sony</Name>
+    <Directory>wine-Programs-Sony.directory</Directory>
+  <Menu>
+    <Name>wine-Programs-Sony-Sony PC Companion</Name>
+    <Directory>wine-Programs-Sony-Sony PC Companion.directory</Directory>
+    <Include>
+      <Filename>wine-Programs-Sony-Sony PC Companion-Uninstall.desktop</Filename>
+    </Include>
+  </Menu>
+  </Menu>
+  </Menu>
+  </Menu>
+</Menu>

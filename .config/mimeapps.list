@@ -1,0 +1,18 @@
+[Added Associations]
+application/x-cd-image=vlc.desktop;
+application/msword=evince.desktop;gedit.desktop;
+inode/chardevice=gedit.desktop;
+application/winhlp=gedit.desktop;
+application/vnd.ms-htmlhelp=gedit.desktop;
+application/pdf=kde4-okularApplication_pdf.desktop;libreoffice-draw.desktop;
+application/x-shellscript=ubuntu-software-center.desktop;
+application/postscript=eog.desktop;
+application/x-spss-sav=gedit.desktop;
+application/x-virtualbox-vdi=gedit.desktop;
+image/jpeg=gedit.desktop;
+text/x-java=gedit.desktop;
+image/svg+xml=inkscape.desktop;
+application/x-ms-dos-executable=wine-extension-vbs.desktop;wine-extension-xml.desktop;
+application/vnd.oasis.opendocument.formula-template=org.gnome.font-viewer.desktop;
+application/octet-stream=gedit.desktop;
+application/x-executable=gedit.desktop;

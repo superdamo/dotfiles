@@ -1,0 +1,21 @@
+00m0(Build:2)
+
+Rethrow
+
+Rethrow
+Element does not exist and cannot be created: "default.xml"
+Rethrow
+Element does not exist and cannot be created: "sc_imagelist.xml"
+Rethrow
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/sfxbasemodel.cxx:1530: storeSelf
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1124: Begin
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1210: Save
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1278: Save: Alien to Alien
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1338: Locking
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1556: Storing in alien format.
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1672: Medium commit.
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/objstor.cxx:1683: Storing is successful.
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/sfxbasemodel.cxx:1617: successful saving.
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/sfxbasemodel.cxx:1659: storeAsURL
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/sfxbasemodel.cxx:1530: storeSelf
+/build/libreoffice-LU0ut6/libreoffice-5.0.6/sfx2/source/doc/sfxbasemodel.cxx:1543: unexpected parameter for storeSelf, might be no problem if SaveAs is executed.

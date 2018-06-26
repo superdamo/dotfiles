@@ -1,0 +1,4 @@
+[utils.icon][WARNING] gtk-icon-theme-error-quark: Icon 'workspace-switcher' not present in theme flattr-icons-master (0) (icon.py:32)
+[utils.icon][[1;33mWARNING[0m] gtk-icon-theme-error-quark: Icon 'workspace-switcher' not present in theme flattr-icons-master (0) (icon.py:32)
+[utils.icon][WARNING] gtk-icon-theme-error-quark: Icon 'computerjanitor' not present in theme flattr-icons-master (0) (icon.py:32)
+[utils.icon][[1;33mWARNING[0m] gtk-icon-theme-error-quark: Icon 'computerjanitor' not present in theme flattr-icons-master (0) (icon.py:32)

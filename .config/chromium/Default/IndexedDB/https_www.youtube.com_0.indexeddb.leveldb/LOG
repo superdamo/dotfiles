@@ -1,0 +1,3 @@
+2018/06/09-10:50:10.737 1152 Reusing MANIFEST /home/damien/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/06/09-10:50:10.737 1152 Recovering log #3
+2018/06/09-10:50:10.744 1152 Reusing old log /home/damien/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 

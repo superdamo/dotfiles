@@ -1,0 +1,9 @@
+open_with archivemounter
+open_with archive\ mounter
+gedit
+open_with 
+mkdir 2nd Year
+
+open_with archive-manager
+open_with atom
+delete

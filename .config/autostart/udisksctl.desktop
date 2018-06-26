@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=udisksctl mount -b /dev/sda4
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_IE]=Windows mount
+Name=Windows mount
+Comment[en_IE]=Automatically mounts Windows partition at startup
+Comment=Automatically mounts Windows partition at startup
