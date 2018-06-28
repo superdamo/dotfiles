@@ -1,5 +1,5 @@
 #set wallpaper
-bash /home/damien/.bin/fehbg &
+bash /home/damien/.fehbg &
 
 #run .Xresources
 xrdb -load ~/.Xresources
