@@ -1,1 +1,0 @@
-Writer2LaTeX installerer eksportfiltre til LaTeX og BibTeX i Writer

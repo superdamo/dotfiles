@@ -1,1 +1,0 @@
-Writer2LaTeX dostarcza filtrów eksportu programu Writer do LaTeXa i BibTeXa

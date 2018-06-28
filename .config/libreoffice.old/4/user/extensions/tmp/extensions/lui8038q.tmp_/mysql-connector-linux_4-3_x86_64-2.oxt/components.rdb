@@ -1,2 +1,0 @@
-<?xml version="1.0"?>
-<components xmlns="http://openoffice.org/2010/uno-components"><component loader="com.sun.star.loader.SharedLibrary" uri="./mysqlc.uno.so"><implementation name="com.sun.star.comp.sdbc.mysqlc.MysqlCDriver"><service name="com.sun.star.sdbc.Driver"/></implementation></component></components>

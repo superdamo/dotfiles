@@ -1,5 +1,0 @@
-[directory]
-nautilus-list-view-sort-column=date_modified
-nautilus-list-view-sort-reversed=true
-nautilus-list-view-visible-columns=name;size;type;where;date_modified;
-nautilus-list-view-column-order=name;size;type;where;date_modified;date_accessed;owner;group;permissions;mime_type;

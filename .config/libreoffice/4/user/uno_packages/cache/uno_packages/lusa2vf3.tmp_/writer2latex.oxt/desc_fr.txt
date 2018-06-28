@@ -1,1 +1,0 @@
-Writer2LaTeX exporte les documents Writer vers LaTeX et BibTeX
