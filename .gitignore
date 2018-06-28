@@ -203,4 +203,6 @@ vst
 .xsession-errors.old
 *.swp
 temp_git
-#>
+\#>
+~/.config/compton.conf~
+status.txt
