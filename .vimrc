@@ -39,7 +39,7 @@ Plugin 'ervandew/supertab'
 Plugin 'severin-lemaignan/vim-minimap'
 
 " Buffer explorer
-Plugin 'fholgado/minibufexpl.vim'
+Plugin 'ap/vim-buftabline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -75,6 +75,7 @@ set hidden
 set encoding=utf8
 set laststatus=0
 set mouse=a
+:set pastetoggle=<F12>
 highlight LineNr ctermfg = lightgrey
 :filetype plugin on
 
