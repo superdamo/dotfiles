@@ -37,7 +37,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	PS1='\[\e[33m\]\W\[\e[m\] > ' 
+	PS1="\[\e[33m\]\W\[\e[m\] \$(__git_ps1 '(%s)') > " 
 	#'\[\e[32m\]\u\[\e[m\]:\[\e[33m\]\W\[\e[m\] >'
 	PS2=' >'
 else
