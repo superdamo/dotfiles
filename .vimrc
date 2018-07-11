@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'syntastic'
 
 " Directory tree
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 
 " Distraction free writing
 Plugin 'junegunn/goyo.vim'
@@ -21,10 +21,10 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'reedes/vim-pencil'
 
 " Icons
-Plugin 'ryanoasis/vim-devicons'
+"Plugin 'ryanoasis/vim-devicons'
 
 " NERDtree syntax highlighting
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Gutter git indicator
 Plugin 'airblade/vim-gitgutter'
@@ -36,10 +36,16 @@ Plugin 'lervag/vimtex'
 Plugin 'ervandew/supertab'
 
 " Minimap
-Plugin 'severin-lemaignan/vim-minimap'
+"Plugin 'severin-lemaignan/vim-minimap'
 
 " Buffer explorer
 Plugin 'ap/vim-buftabline'
+
+" In editor terminal
+Plugin 'oplatek/conque-shell'
+
+" File manager
+"Plugin 'cocopon/vaffle.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
