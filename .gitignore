@@ -277,3 +277,7 @@ status.txt
 .config/xfce4
 .config/yelp/
 .Install
+.spyder2-py3/
+.swm
+.swn
+temp_apt
