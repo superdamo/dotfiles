@@ -283,3 +283,10 @@ status.txt
 temp_apt
 .vifm/
 SeventhSense-1.17.0 (2)/
+.bash_profile
+.config/caja/
+.config/launcher-main/
+.config/mate/
+.inputrc
+.paradoxlauncher/
+.xsession
