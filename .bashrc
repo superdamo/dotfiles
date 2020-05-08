@@ -143,7 +143,7 @@ if ! shopt -oq posix; then
 fi
 
 #PATH
-PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:~/.local/bin
+PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:~/.local/bin:/opt/texlive/2020/bin/x86_64-linux
 
 #Set Xterm to full colour mode
 if [ "$TERM" == "xterm" ]; then
