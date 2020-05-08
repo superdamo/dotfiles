@@ -44,7 +44,7 @@ endif
 " Startup commands
 autocmd FileType tex call pencil#init({'wrap': 'soft'})
 autocmd FileType md call pencil#init({'wrap': 'soft'})
-let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_view_general_options_latexmk = '--unique'
 let g:vimtex_complete_close_braces = 1
@@ -62,12 +62,7 @@ set mouse=a
 
 "Keymaps
 map <C-w> <C-w><C-w>
-map <C-g> :Goyo<CR>
-map <C-h> :Goyo!<CR>
-map <C-t> :bn<CR>
-map <C-b> :buffers<CR>
 map <F7> :setlocal spell! spelllang=en_gb<CR>
-map <C-n> :NERDTreeToggle ~/Documents/Link\ to\ Homework/Outstanding<CR>
 
 "TEX Abbreviations
 iabbrev FIG \begin{figure}[H]<CR><Tab>\centering<CR>\includegraphics[width=\linewidth]{}<CR>\caption{}<CR>\label{fig:}<CR><C-D>\end{figure}<CR>
@@ -75,5 +70,3 @@ iabbrev LST \begin{lstlisting}[language=Python, caption={},label={lst:}, escapec
 iabbrev PYTH \lstinline[language=Python]$$
 iabbrev TAB \begin{table}[H]<CR><Tab>\centering<CR>\begin{tabular}{cc}<CR><Tab>\hline<CR><CR>\hline<CR>\hline<CR><CR>\hline<CR><C-D>\end{tabular}<CR>\caption{}<CR>\label{tab:}<CR><C-D>\end{table}<CR>
 iabbrev EQ \begin{equation}<CR><CR>\end{equation}<CR>
-
-" Legacy commands
