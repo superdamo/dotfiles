@@ -44,7 +44,7 @@ function parse_git_branch() {
 	if [ ! "${BRANCH}" == "" ]
 	then
 		STAT=`parse_git_dirty`
-		echo -e "[${BRANCH}${STAT}\e[32m]\e[0m"
+		echo -e "${BRANCH}${STAT}\e[32m\e[0m"
 	else
 		echo ""
 	fi
