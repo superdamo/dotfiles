@@ -1,23 +1,30 @@
+DEFAULTSESSION=mate-session
+exec mate-session
+
+
+
+
+
 # set wallpaper
-bash /home/damien/.fehbg &
+#bash /home/damien/.fehbg &
 
 # run .Xresources
-xrdb -load ~/.Xresources
+#xrdb -load ~/.Xresources
 
 # set cursor look
-xsetroot -cursor_name left_ptr &
+#xsetroot -cursor_name left_ptr &
 
 # night time colour temperature
-redshift &
+#redshift &
 
 # compositor
-compton --config ~/.config/compton.conf -b &
+#compton --config ~/.config/compton.conf -b &
 
 # mount windows partition
-mount /dev/sda4 /media/damien/Windows &
+#mount /dev/sda4 /media/damien/Windows &
 
 #set window manager
-exec xmonad
+#exec xmonad
 
 #start wired network connection
-#sh /home/damien/.network_startup.sh
+##sh /home/damien/.network_startup.sh
