@@ -292,3 +292,13 @@ SeventhSense-1.17.0 (2)/
 .xsession
 working
 .themes/*
+.config/GIMP/
+.config/REAPER/
+.config/pavucontrol.ini
+.config/skanliterc
+.var/
+.wget-hsts
+.wine_tab/
+.zoom/
+My Tableau Repository/
+hp-check.log
