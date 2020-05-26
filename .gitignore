@@ -203,7 +203,6 @@ vst
 .xsession-errors.old
 *.swp
 temp_git
-\#>
 status.txt
 .config/.ACEStream
 .config/Atom
@@ -302,3 +301,9 @@ working
 .zoom/
 My Tableau Repository/
 hp-check.log
+~/.xmonad/xmonad.errors
+.config/falkTX/
+.config/guvcview2/
+.wallpapers/2109.jpg
+.wallpapers/photo-1485470733090-0aae1788d5af
+.wine64/
