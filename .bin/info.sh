@@ -18,17 +18,20 @@ kern=$(uname -r)
 # shell
 shell=$(echo $BASH_VERSION | sed 's/-[^-]*$//')
 # wm
-wm=$(xmonad --version)
+# wm=$(xmonad --version)     ----no longer ussing xmonad
+# de
+de=$(xbps-query -l | grep mate-desktop | awk '{print substr($2,1,100)}')
 # packages
-pack=$(dpkg --list | wc --lines)
+# pack=$(dpkg --list | wc --lines)    ---debian/ubuntu only
+pack=$(xbps-query -l | wc -l)     #void linux
 
 # printing
 echo
 echo -e $tree_1
-echo -e $tree_2 "\033[0;31mDistro   \033[m:" $dist
+echo -e $tree_2 "\033[0;31mDistro   \033[m:" $dist"-linux"
 echo -e $tree_3 "\033[0;31mKernel   \033[m:" $kern
 echo -e $tree_4 "\033[0;31mShell    \033[m:" "Bash" $shell 
-echo -e $tree_5 "\033[0;31mWM       \033[m:" $wm
+echo -e $tree_5 "\033[0;31mDE       \033[m:" $de
 echo -e $tree_6 "\033[0;31mPackages \033[m:" $pack
 echo -e $tree_7
 echo
