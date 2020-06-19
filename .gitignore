@@ -309,3 +309,7 @@ hp-check.log
 .wine64/
 .config/leafpad/
 Jo/
+.config/patchagerc
+.config/zoomus.conf
+.wine_val/
+HY-Plugins/
