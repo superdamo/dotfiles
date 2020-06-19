@@ -29,8 +29,8 @@ Plugin 'oplatek/conque-shell'
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
-" File manager
-"Plugin 'cocopon/vaffle.vim'
+" List buffers in command line
+Plugin 'buftabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,6 +59,13 @@ set mouse=a
 :set pastetoggle=<F12>
 :syntax on
 :filetype plugin on
+
+" Buftabs Configuration
+:let g:buftabs_only_basename=1
+:let g:buftabs_active_highlight_group="Visual"
+:let g:buftabs_marker_start = "["
+:let g:buftabs_marker_end = "]"   
+:let g:buftabs_marker_modified = "+"
 
 "Keymaps
 map <C-w> <C-w><C-w>
