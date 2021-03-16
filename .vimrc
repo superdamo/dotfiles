@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Syntax linter
-Plugin 'syntastic'
+Plugin 'scrooloose/syntastic'
 
 " Pencil
 Plugin 'reedes/vim-pencil'
@@ -29,6 +29,18 @@ Plugin 'tpope/vim-fugitive'
 " List buffers in command line
 Plugin 'bling/vim-bufferline'
 
+" Distraction free writing
+Plugin 'junegunn/goyo.vim'
+
+" iA Writer inspired colour scheme
+Plugin 'logico/typewriter-vim'
+
+" iA Writer emulation for markdown
+Plugin 'amix/vim-zenroom2'
+
+" Light colour scheme
+Plugin 'swalladge/paper.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,7 +52,10 @@ endif
 
 " Startup commands
 autocmd FileType tex call pencil#init({'wrap': 'soft'})
-autocmd FileType md call pencil#init({'wrap': 'soft'})
+autocmd FileType markdown,mkd,md call pencil#init({'wrap': 'soft'})
+highlight GitGutterAdd    guifg=#005f00 ctermfg=22
+highlight GitGutterChange guifg=#ffff00 ctermfg=226
+highlight GitGutterDelete guifg=#d70000 ctermfg=160
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_complete_close_braces = 1
 let g:vimtex_fold_enabled = 1
@@ -50,12 +65,27 @@ set hidden
 set encoding=utf8
 set laststatus=0
 set mouse=a
-:set pastetoggle=<F12>
-:syntax on
-:filetype plugin on
+set pastetoggle=<F12>
+set signcolumn=number
+set updatetime=100
+syntax on
+filetype plugin on
+
+" Goyo colour scheme change
+function! s:goyo_enter()
+    colorscheme typewriter
+endfunction
+
+function! s:goyo_leave()
+    colorscheme paper
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " Keymaps
 map <F7> :setlocal spell! spelllang=en_gb<CR>
+nnoremap <silent> <leader>z :Goyo<cr>
 
 "TEX Abbreviations
 iabbrev FIG \begin{figure}[H]<CR><Tab>\centering<CR>\includegraphics[width=\linewidth]{}<CR>\caption{}<CR>\label{fig:}<CR><C-D>\end{figure}<CR>
