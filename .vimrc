@@ -53,9 +53,9 @@ endif
 " Startup commands
 autocmd FileType tex call pencil#init({'wrap': 'soft'})
 autocmd FileType markdown,mkd,md call pencil#init({'wrap': 'soft'})
-highlight GitGutterAdd    guifg=#005f00 ctermfg=22
-highlight GitGutterChange guifg=#ffff00 ctermfg=226
-highlight GitGutterDelete guifg=#d70000 ctermfg=160
+highlight GitGutterAdd    ctermfg=2
+highlight GitGutterChange ctermfg=4
+highlight GitGutterDelete ctermfg=1
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_complete_close_braces = 1
 let g:vimtex_fold_enabled = 1
