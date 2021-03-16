@@ -330,3 +330,6 @@ HY-Plugins/
 ToguAudioLine/
 carla_error
 exercism/
+.config/gatsby/
+.kodi/
+.nvm/
