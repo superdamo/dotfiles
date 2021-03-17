@@ -41,6 +41,9 @@ Plugin 'amix/vim-zenroom2'
 " Light colour scheme
 Plugin 'swalladge/paper.vim'
 
+" Better commenting
+Plugin 'scrooloose/nerdcommenter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -60,6 +63,13 @@ let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_complete_close_braces = 1
 let g:vimtex_fold_enabled = 1
 let g:bufferline_modified = ' +'
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
 set number
 set hidden
 set encoding=utf8
@@ -86,8 +96,10 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " Keymaps
 map <F7> :setlocal spell! spelllang=en_gb<CR>
 nnoremap <silent> <leader>z :Goyo<cr>
+nmap <C-_>   <Plug>NERDCommenterToggle
+vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
-"TEX Abbreviations
+" TEX Abbreviations
 iabbrev FIG \begin{figure}[H]<CR><Tab>\centering<CR>\includegraphics[width=\linewidth]{}<CR>\caption{}<CR>\label{fig:}<CR><C-D>\end{figure}<CR>
 iabbrev LST \begin{lstlisting}[language=Python, caption={},label={lst:}, escapechar=\%]<CR><CR>\end{lstlisting}<CR>
 iabbrev PYTH \lstinline[language=Python]$$
